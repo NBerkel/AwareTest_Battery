@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="com.unimelb.niels.awaretest"
+    android:title="@string/app_name">
+
+    <CheckBoxPreference
+        android:id="@+id/status_plugin"
+        android:defaultValue="false"
+        android:key="status_plugin"
+        android:persistent="true"
+        android:summary="Activate/deactivate plugin"
+        android:title="Active" />
+</PreferenceScreen>
