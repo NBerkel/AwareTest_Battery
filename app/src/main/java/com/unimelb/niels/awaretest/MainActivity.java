@@ -112,6 +112,8 @@ public class MainActivity extends AppCompatActivity {
         REQUIRED_PERMISSIONS.add(Manifest.permission.READ_PHONE_STATE);
         REQUIRED_PERMISSIONS.add(Manifest.permission.RECORD_AUDIO);
 
+        REQUIRED_PERMISSIONS.add(Manifest.permission.WAKE_LOCK);
+
         boolean permissions_ok = true;
         for (String p : REQUIRED_PERMISSIONS) {
             if (ContextCompat.checkSelfPermission(this, p) != PackageManager.PERMISSION_GRANTED) {
