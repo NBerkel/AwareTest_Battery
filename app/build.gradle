@@ -34,6 +34,9 @@ dependencies {
     compile 'com.github.denzilferreira:aware-client:feature-sync-adapter-SNAPSHOT'
 //    compile 'com.github.denzilferreira:aware-client:development-SNAPSHOT'
 
+    compile "org.eclipse.paho:org.eclipse.paho.client.mqttv3:$mqtt_libs"
+    compile "com.koushikdutta.ion:ion:$ion_libs"
+
     implementation 'com.android.support:gridlayout-v7:25.4.0'
 
 }
