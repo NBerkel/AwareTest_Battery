@@ -31,11 +31,11 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.0'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.0'
 
-    compile 'com.github.denzilferreira:aware-client:feature-sync-adapter-SNAPSHOT'
-//    compile 'com.github.denzilferreira:aware-client:development-SNAPSHOT'
+//    compile 'com.github.denzilferreira:aware-client:feature-sync-adapter-SNAPSHOT'
+    implementation 'com.github.denzilferreira:aware-client:development-SNAPSHOT'
 
-    compile "org.eclipse.paho:org.eclipse.paho.client.mqttv3:$mqtt_libs"
-    compile "com.koushikdutta.ion:ion:$ion_libs"
+    implementation "org.eclipse.paho:org.eclipse.paho.client.mqttv3:$mqtt_libs"
+    implementation "com.koushikdutta.ion:ion:$ion_libs"
 
     implementation 'com.android.support:gridlayout-v7:25.4.0'
 

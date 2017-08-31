@@ -54,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
 
                         Aware.setSetting(getApplicationContext(), Aware_Preferences.STATUS_SCREEN, true);
                         Aware.setSetting(getApplicationContext(), Aware_Preferences.STATUS_BATTERY, true);
+                        Aware.setSetting(getApplicationContext(), Aware_Preferences.STATUS_BLUETOOTH, true);
+                        Aware.setSetting(getApplicationContext(), Aware_Preferences.STATUS_ACCELEROMETER, true);
 
                         Aware.setSetting(getApplicationContext(), Aware_Preferences.WEBSERVICE_WIFI_ONLY, false);
                         Aware.setSetting(getApplicationContext(), Aware_Preferences.FREQUENCY_WEBSERVICE, 30);
@@ -102,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
             REQUIRED_PERMISSIONS.add(Manifest.permission.READ_CALL_LOG);
         }
         REQUIRED_PERMISSIONS.add(Manifest.permission.READ_CONTACTS);
+        REQUIRED_PERMISSIONS.add(Manifest.permission.BLUETOOTH);
         REQUIRED_PERMISSIONS.add(Manifest.permission.READ_SMS);
         REQUIRED_PERMISSIONS.add(Manifest.permission.INTERNET);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
